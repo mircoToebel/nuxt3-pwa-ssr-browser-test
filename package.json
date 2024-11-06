@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "clean": "nuxi cleanup",
+    "start-prod": "nuxi build && nuxi generate && nuxi preview",
+    "start-prod-https": "nuxi build && nuxi generate && npx serve ./.output/public --ssl-cert {ADD-YOUR-CERTIFICATE} --ssl-key {ADD-YOUR-CERTIFICATE-KEY}"
+  },
+  "dependencies": {
+    "nuxt": "^3.13.2"
+  },
+  "devDependencies": {
+    "@vite-pwa/nuxt": "^0.10.5"
+  }
+}
