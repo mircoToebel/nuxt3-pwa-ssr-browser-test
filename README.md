@@ -5,5 +5,8 @@ The issue reported is about the different behavior of the PWA functionality when
 In app.vue, <NuxtPwaManifest /> is enclosed in a <ClientOnly> component. With this setting, it's possible to install the PWA app on Chrome, but not on Samsung Internet browsers.
 When <NuxtPwaManifest /> is moved outside the <ClientOnly> component, the PWA app can be installed on Samsung Internet browsers, but not on Chrome.
 
+In the index page, it can be checked whether the event `beforeinstallprompt` has arrived or not.
+
 To test the behavior, a certificate is needed and the script 'start-prod-https' in package.json needs to be set accordingly.
 Then, run `npm run start-prod-https`.
+
